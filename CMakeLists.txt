@@ -3,9 +3,8 @@ project(5e C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(5e main.c)
+add_executable(5e main.c string/tasks/removeNonLetters.h)
 
 add_library(str string/string_.h string/string_.c
-        string/tasks/removeNonLetters.h
         )
 target_link_libraries(5e str)

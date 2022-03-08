@@ -1,7 +1,9 @@
 #include <stdio.h>
+//#include "string/string_.h"
+#include "string/tasks/removeNonLetters.h"
 
 int main() {
-    printf("Hola mundo!\n");
+    test_removeNonLetters();
 
     return 0;
 }

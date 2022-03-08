@@ -1,8 +1,0 @@
-//
-// Created by David on 02.03.2022.
-//
-
-#ifndef INC_5E_REMOVENONLETTERS_H
-#define INC_5E_REMOVENONLETTERS_H
-
-#endif //INC_5E_REMOVENONLETTERS_H
