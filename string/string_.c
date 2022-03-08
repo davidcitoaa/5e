@@ -84,13 +84,13 @@ char *copyIfReverse(char *rbeginSource, const char *rendSource, char *beginDesti
 }
 
 char *getEndOfString(char *begin) {
-    while (*begin != '\0') {
+    while (*begin != '\0')
         begin++;
-    }
+
     return begin;
 }
 
-int strcmp_(const char *lhs, const char *rhs){
+int strcmp_(const char *lhs, const char *rhs) {
     while (*lhs == *rhs && *lhs) {
         lhs++, rhs++;
     }
