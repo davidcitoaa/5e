@@ -4,6 +4,17 @@
 #include "assert.h"
 #include <memory.h>
 
+
+int getWord(char *beginSearch, WordDescriptor *word) {
+    word->begin = findNonSpace(beginSearch);
+    if (*word->begin == '\0')
+        return 0;
+
+    word->end = findSpace(word->begin);
+
+    return 1;
+}
+
 size_t strlen_(const char *begin) {
     char *end = begin;
     while (*end != '\0')

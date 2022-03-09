@@ -5,7 +5,28 @@
 #include <ctype.h>
 #define ASSERT_STRING(expected, got)assertString(expected, got, \
  __FILE__, __FUNCTION__, __LINE__)
+#define MAX_STRING_SIZE 100
+#define MAX_N_WORDS_IN_STRING 100
+#define MAX_WORD_SIZE 20
+char _stringBuffer[ MAX_STRING_SIZE + 1];
 
+typedef struct WordDescriptor {
+    char *begin; // позиция начала слова
+    char *end; // позиция первого символа, после последнего символа слова
+} WordDescriptor;
+
+typedef struct BagOfWords {
+    WordDescriptor words[MAX_N_WORDS_IN_STRING];
+    size_t size;
+} BagOfWords;
+
+BagOfWords _bag;
+BagOfWords _bag2;
+
+//Функция getWord вернёт значение 0, если слово не было считано, в противном
+//случае будет возвращено значение 1 и в переменную word типа WordDescriptor
+//будут записаны позиции начала слова, и первого символа после конца слова
+int getWord(char *beginSearch, WordDescriptor *word);
 
 // возвращает количество символов в строке
 size_t strlen_(const char *begin);
