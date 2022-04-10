@@ -14,10 +14,11 @@ void removeNonLetters(char *s) {
 void assertString(const char *expected, char *got,
                   char const *fileName, char const *funcName,
                   int line) {
-    if (strcmp_ (expected, got)) {
+    int x = strcmp_(expected, got);
+    if (x) {
         fprintf(stderr, " File %s\n", fileName);
         fprintf(stderr, "%s - failed on line %d\n", funcName, line);
-        fprintf(stderr, " Expected : \"%s \"\n", expected);
+        fprintf(stderr, " Expected : \"%s\"\n", expected);
         fprintf(stderr, "Got: \"%s\"\n\n", got);
     } else
         fprintf(stderr, "%s - OK\n", funcName);

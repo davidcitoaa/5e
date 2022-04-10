@@ -31,7 +31,6 @@ char *find(char *begin, const char *end, int ch) {
 
 
 char *findNonSpace(char *begin) {
-    assert(*begin != '\0');
     while (*begin != '\0' && isspace(*begin))
         begin++;
 
