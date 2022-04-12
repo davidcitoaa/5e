@@ -6,6 +6,7 @@
 #include "string/tasks/replaceNumbersWithSpaces.h"
 #include "string/tasks/replace.h"
 #include "string/tasks/areWordsOrdered.h"
+#include "string/tasks/getBagOfWords.h"
 
 int main() {
     test_removeNonLetters();
@@ -14,6 +15,7 @@ int main() {
     test_replacesNumbersWithSpaces_task4();
     test_replace_task5();
     test_areWordsOrdered_task6();
+    test_reverseWordsBag();
 
     return 0;
 }
