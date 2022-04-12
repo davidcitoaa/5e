@@ -8,6 +8,7 @@
 #include "string/tasks/areWordsOrdered.h"
 #include "string/tasks/getBagOfWords.h"
 #include "string/tasks/howManyWordsPalindromes.h"
+#include "string/tasks/alternatingWords.h"
 
 int main() {
     test_removeNonLetters();
@@ -18,6 +19,7 @@ int main() {
     test_areWordsOrdered_task6();
     test_reverseWordsBag();
     test_howManyWordsPalindromes_task8();
+    test_alternatingWords_task9();
 
     return 0;
 }
