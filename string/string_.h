@@ -85,4 +85,6 @@ char *getEndOfString(char *begin);
 
 int strcmp_(const char *lhs, const char *rhs);
 
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2);
+
 #endif

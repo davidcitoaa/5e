@@ -4,7 +4,6 @@
 #include "assert.h"
 #include <memory.h>
 
-
 int getWord(char *beginSearch, WordDescriptor *word) {
     word->begin = findNonSpace(beginSearch);
     if (*word->begin == '\0')
@@ -105,4 +104,13 @@ int strcmp_(const char *lhs, const char *rhs) {
         lhs++, rhs++;
     }
     return *rhs - *lhs;
+}
+
+int areWordsEqual(WordDescriptor w1, WordDescriptor w2) {
+    char *begin1 = w1.begin;
+    char *begin2 = w2.begin;
+    while (begin1 != w1.end - 1 && (*begin1 == *begin2))
+        begin1++, begin2++;
+
+    return *begin1 - *begin2;
 }
