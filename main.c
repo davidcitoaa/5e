@@ -7,6 +7,7 @@
 #include "string/tasks/replace.h"
 #include "string/tasks/areWordsOrdered.h"
 #include "string/tasks/getBagOfWords.h"
+#include "string/tasks/howManyWordsPalindromes.h"
 
 int main() {
     test_removeNonLetters();
@@ -16,6 +17,7 @@ int main() {
     test_replace_task5();
     test_areWordsOrdered_task6();
     test_reverseWordsBag();
+    test_howManyWordsPalindromes_task8();
 
     return 0;
 }
